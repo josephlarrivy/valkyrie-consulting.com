@@ -1,0 +1,44 @@
+/* Container for the navigation links */
+#nav-inner-container {
+    display: flex;
+    align-items: center; /* Center the items vertically */
+    background-color: rgb(39, 154, 104);
+    padding: 10px 20px; /* Add some padding for spacing */
+}
+
+#nav-inner-container h1 {
+    margin: 0;
+    margin-left: -20px;
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+}
+
+/* Navigation links */
+.nav-item {
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    padding: 10px 20px;
+    margin-left: 30px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Active link style */
+.active {
+    background-color: white;
+    color: rgb(39, 154, 104);
+}
+
+.active:hover {
+    background-color: white;
+    color: rgb(39, 154, 104);
+}
+
+.contact-link {
+  padding: 10px 20px;
+  margin-left: auto; /* Push it to the right */
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
