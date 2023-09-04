@@ -5,6 +5,8 @@ import About from "./About";
 import Services from "./Services";
 import NavBar from "./NavBar";
 import Contact from "./Contact";
+import Footer from "./Footer";
+import "../styles/AppRoutes.css"
 
 const AppRoutes = () => {
 
@@ -13,7 +15,7 @@ const AppRoutes = () => {
       <div id="nav-outer-container">
         {<NavBar />}
       </div>
-      <div id="feed-outer-container">
+      <div id="page-container">
         <Routes>
           <Route exact path="/"
             element={<Home />}
@@ -29,8 +31,9 @@ const AppRoutes = () => {
           />
         </Routes>
       </div>
-
-
+      <div id="footer-outer-container">
+        {<Footer />}
+      </div>
     </div>
   )
 }

@@ -1,0 +1,22 @@
+/* Add this CSS to your existing styles */
+#page-main-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* Make the container at least the height of the viewport */
+}
+
+#page-container {
+    flex-grow: 1;
+    /* Allow the content to grow and push the footer to the bottom */
+}
+
+#footer-outer-container {
+    flex-shrink: 0;
+    /* Prevent the footer from shrinking */
+    background-color: rgb(39, 154, 104);
+    color: white;
+    /* padding: 2px; */
+    text-align: center;
+    /* float: bottom; */
+}

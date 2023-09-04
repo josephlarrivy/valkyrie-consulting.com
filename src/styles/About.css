@@ -1,0 +1,47 @@
+#about-container p {
+    text-align: center;
+    font-size: larger;
+    color: rgb(39, 154, 104);
+}
+
+.full-width-banner {
+    width: 90vw;
+    margin-left: 5vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.full-width-banner p {
+    /* margin-top: 20%; */
+    width: 50%;
+}
+
+.main-about-text {
+    display: flex;
+    align-items: center;
+    /* Center vertically */
+    height: 250px;
+    color: rgb(39, 154, 104);
+    /* Set a specific height for the div */
+}
+
+#photo-credit {
+    font-size: small;
+    color: rgba(255,255,255,0.6);
+    background-color: aqua;
+}
+
+#photo-credit a {
+    font-size: small;
+    color: rgba(255, 255, 255, 0.6);
+    background-color: brown;
+}
+
+.full-width-banner img {
+    width: 500px;
+    /* Set your desired width here */
+    height: 350px;
+    /* Set your desired height here */
+    object-fit: cover;
+    /* Maintain aspect ratio and cover the entire container */
+}

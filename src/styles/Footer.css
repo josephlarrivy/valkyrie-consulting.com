@@ -1,0 +1,15 @@
+#footer-inner-container {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(39, 154, 104);
+    color: white;
+}
+
+.footer-div {
+    width: 32vw;
+}
+
+.footer-div img {
+    margin-top: -10px;
+    height: 35px;
+}
