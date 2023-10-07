@@ -14,7 +14,7 @@
 #footer-outer-container {
     flex-shrink: 0;
     /* Prevent the footer from shrinking */
-    background-color: rgb(39, 154, 104);
+    background-color: rgb(26, 153, 141);
     color: white;
     /* padding: 2px; */
     text-align: center;

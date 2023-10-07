@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import useLocalStorage from "../hooks/useLocalStorage";
+import valkyrielogo from "../images/Valkyrie-Consulting-Approved-Logo.png"
 import "../styles/NavBar.css";
 
 const NavBar = () => {
@@ -22,7 +23,7 @@ const NavBar = () => {
   return (
     <div id="nav-inner-container">
       <Link to="/" className="nav-item">
-        <h1>Valkyrie Consulting</h1>
+        <img id='logo' src={valkyrielogo} alt="Valkyrie consulting alex ross duluth minnesota superior wisconsin therapy logo" />
       </Link>
       <Link
         to="/"
@@ -48,6 +49,14 @@ const NavBar = () => {
             : "nav-item"
         }
       >Services</Link>
+      <Link
+        to="/events"
+        className={
+          location.pathname === "/events"
+            ? "nav-item active"
+            : "nav-item"
+        }
+      >Events</Link>
       <Link
         to="/contact"
         className={

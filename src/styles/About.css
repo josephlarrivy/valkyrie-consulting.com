@@ -1,47 +1,100 @@
-#about-container p {
-    text-align: center;
-    font-size: larger;
-    color: rgb(39, 154, 104);
+#about-header {
+    /* margin-top: 200px;
+    margin-bottom: 200px;
+    color: rgb(26, 153, 141); */
 }
 
-.full-width-banner {
+#about-header h1 {
+    color: rgb(26, 153, 141);
+    font-size: 90px;
+    margin-top: 100px;
+    /* padding: 30px; */
+    font-weight: 100;
+    font-family: serif;
+}
+
+#about-header h2 {
+    color: rgb(26, 153, 141);
+    font-size: 30px;
+    /* padding: 30px; */
+    font-weight: 100;
+    font-family: serif;
+    margin-bottom: 200px;
+}
+
+#about-container .about-image-container {
+    position: relative;
+}
+
+.about-photo-credit {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    font-size: x-small;
+    width: 100%;
+    margin-left: 10px;
+}
+
+.about-photo-credit * {
+    color: white;
+    font-size: x-small;
+}
+
+.about-image-container p {
+    font-size: smaller;
+}
+
+#about-container p {
+    text-align: left;
+    font-size: larger;
+}
+
+.about-full-width-banner {
     width: 90vw;
     margin-left: 5vw;
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
-.full-width-banner p {
-    /* margin-top: 20%; */
+.about-full-width-banner p {
     width: 50%;
 }
 
-.main-about-text {
-    display: flex;
-    align-items: center;
-    /* Center vertically */
-    height: 250px;
-    color: rgb(39, 154, 104);
-    /* Set a specific height for the div */
+.about-main-text {
+    /* color: rgb(26, 153, 141); */
 }
 
-#photo-credit {
-    font-size: small;
-    color: rgba(255,255,255,0.6);
-    background-color: aqua;
-}
-
-#photo-credit a {
-    font-size: small;
-    color: rgba(255, 255, 255, 0.6);
-    background-color: brown;
-}
-
-.full-width-banner img {
+.about-full-width-banner img {
     width: 500px;
-    /* Set your desired width here */
     height: 350px;
-    /* Set your desired height here */
     object-fit: cover;
-    /* Maintain aspect ratio and cover the entire container */
+}
+
+#about-page-bottom-text-one {
+    color: rgb(26, 153, 141);
+    font-size: 60px;
+    margin-top: 100px;
+    font-weight: 100;
+    font-family: serif;
+}
+
+#about-page-bottom-text-two {
+    color: rgb(26, 153, 141);
+    font-size: 30px;
+    margin-top: 100px;
+    padding-bottom: 30px;
+    font-weight: 100;
+    font-family: serif;
+}
+
+#about-consult-button {
+    background-color: rgb(26, 153, 141);
+    color: white;
+    font-size: large;
+    border: none;
+    padding: 20px;
+    cursor: pointer;
+    margin-bottom: 120px;
 }

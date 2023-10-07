@@ -1,0 +1,26 @@
+#contact-main-container .contact-page-header {
+    color: rgb(26, 153, 141);
+    font-size: 90px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    font-weight: 100;
+    font-family: serif;
+}
+
+#contact-content-container {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+#contact-left-side {
+    width: 50vw;
+    font-family: serif;
+}
+
+#contact-left-side h1 {
+    color: rgb(26, 153, 141);
+}
+
+#contact-right-side {
+    width: 50vw;
+}

@@ -3,6 +3,7 @@ import { Routes, Route, BrowserRouter, useLocation } from 'react-router-dom'
 import Home from "./Home";
 import About from "./About";
 import Services from "./Services";
+import Events from "./Events";
 import NavBar from "./NavBar";
 import Contact from "./Contact";
 import Footer from "./Footer";
@@ -25,6 +26,9 @@ const AppRoutes = () => {
           />
           <Route exact path="/services"
             element={<Services />}
+          />
+          <Route exact path="/events"
+            element={<Events />}
           />
           <Route exact path="/contact"
             element={<Contact />}
