@@ -1,6 +1,6 @@
 import React from "react";
 import ContactForm from "./ContactForm";
-import instagramicon from '../images/icons8-instagram-64.png'
+// import instagramicon from '../images/icons8-instagram-64.png'
 
 
 import '../styles/Contact.css'
