@@ -1,5 +1,5 @@
 import React from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import '../styles/Services.css'
 
@@ -67,9 +67,9 @@ const Services = () => {
 
       <i><h1 id="services-page-bottom-text-one">Let's Talk!</h1></i>
       <h2 id="services-page-bottom-text-two">Your first consultation is free.</h2>
-      <a href="/contact" style={{ textDecoration: 'none', color: 'white' }}>
+      <Link to="/contact" style={{ textDecoration: 'none', color: 'white' }}>
         <button id="about-consult-button">Schedule A Consultation</button>
-      </a>
+      </Link>
 
       <br></br>
       <br></br>

@@ -22,7 +22,7 @@ const NavBar = () => {
 
   return (
     <div id="nav-inner-container">
-      <Link to="/" className="nav-item">
+      <Link to="/" id="navbar-logo-complete">
         <img id='logo' src={valkyrielogo} alt="Valkyrie consulting alex ross duluth minnesota superior wisconsin therapy logo" />
       </Link>
       <Link

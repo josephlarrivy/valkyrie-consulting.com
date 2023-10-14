@@ -1,5 +1,5 @@
 import React from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import '../styles/About.css'
 import aleximage from "../images/bwselfie.jpg"
 import loonsimage from "../images/garrett-cumber-Mj5y6XLi-TA-unsplash.jpg"
@@ -81,9 +81,9 @@ const About = () => {
       
       <i><h1 id="about-page-bottom-text-one">Let's Talk!</h1></i>
       <h2 id="about-page-bottom-text-two">Your first consultation is free.</h2>
-      <a href="/contact" style={{ textDecoration: 'none', color: 'white' }}>
+      <Link to="/contact" style={{ textDecoration: 'none', color: 'white' }}>
         <button id="about-consult-button">Schedule A Consultation</button>
-      </a>
+      </Link>
 
       <br></br>
       <br></br>

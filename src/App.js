@@ -2,7 +2,7 @@ import { BrowserRouter } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import DesktopAppRoutes from './DesktopComponents/DesktopAppRoutes';
-import MobileAppRoutes from './MobileComponents/MobileAppRoutes';
+// import MobileAppRoutes from './MobileComponents/MobileAppRoutes';
 
 function App() {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
@@ -20,7 +20,8 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        {isMobile ? <MobileAppRoutes /> : <DesktopAppRoutes />}
+        {/* {isMobile ? <MobileAppRoutes /> : <DesktopAppRoutes />} */}
+        <DesktopAppRoutes />
       </BrowserRouter>
     </div>
   );

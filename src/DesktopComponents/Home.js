@@ -1,5 +1,5 @@
 import React from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import trailimage from "../images/josh-hild-ANLERD5m1_s-unsplash.jpg"
 import leavesimage from "../images/new-beach-picture.avif"
 import valkyrielogo from "../images/Valkyrie-Consulting-Approved-Logo.jpg"
@@ -18,9 +18,9 @@ const Home = () => {
         <img id='logo' src={valkyrielogo} alt="Instagram" />
         <i><h2 id="home-subtitle">Supporting a healthy Mind-Body connection from a trauma informed perspective</h2></i>
         {/* <h1 id="home-title">Valkyrie Consulting</h1> */}
-        <a href="/contact" style={{ textDecoration: 'none', color: 'white' }}>
+        <Link to="/contact" style={{ textDecoration: 'none', color: 'white' }}>
           <button id="home-consult-button">Schedule A Consultation Today</button>
-        </a>
+        </Link>
       </div>
 
       <div className="image-container">
@@ -53,9 +53,9 @@ const Home = () => {
         </div>
       </div>
 
-      <a href="/services" style={{ textDecoration: 'none', color: 'white' }}>
+      <Link to="/services" style={{ textDecoration: 'none', color: 'white' }}>
         <button id="home-learn-more-button">Learn More</button>
-      </a>
+      </Link>
 
       
 
@@ -82,9 +82,9 @@ const Home = () => {
       <br></br>
       <i><h1 id="home-page-bottom-text-one">Let's Talk!</h1></i>
       <h2 id="home-page-bottom-text-two">Your first consultation is free.</h2>
-      <a href="/contact" style={{ textDecoration: 'none', color: 'white' }}>
+      <Link to="/contact" style={{ textDecoration: 'none', color: 'white' }}>
         <button id="about-consult-button">Schedule A Consultation</button>
-      </a>
+      </Link>
       <br></br>
       <br></br>
       <br></br>
