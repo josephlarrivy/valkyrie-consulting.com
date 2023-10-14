@@ -22,7 +22,7 @@ const About = () => {
         <div className="about-image-container">
           <img src={loonsimage} alt="Superior Wisconsin lake loons"></img>
           <div className="about-photo-credit">
-            <p>Photo by <a href="https://unsplash.com/@gccumber?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Garrett Cumber</a> on <a href="https://unsplash.com/photos/Mj5y6XLi-TA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Unsplash</a></p>
+            <p>Photo by <a href="https://unsplash.com/@gccumber?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="noreferrer">Garrett Cumber</a> on <a href="https://unsplash.com/photos/Mj5y6XLi-TA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="noreferrer">Unsplash</a></p>
           </div>
         </div>
       </div>
@@ -35,7 +35,7 @@ const About = () => {
         <div className="about-image-container">
           <img src={cliffimage} alt="Duluth Minnesota Lake Superior Twin Ports"></img>
           <div className="about-photo-credit">
-            <p>Photo by <a href="https://unsplash.com/@taylor_friehl?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Taylor Friehl</a> on <a href="https://unsplash.com/photos/qevn1LAAMCw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Unsplash</a></p>
+            <p>Photo by <a href="https://unsplash.com/@taylor_friehl?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="noreferrer">Taylor Friehl</a> on <a href="https://unsplash.com/photos/qevn1LAAMCw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="noreferrer">Unsplash</a></p>
           </div>
         </div>
         <p className="about-main-text">But that's not all – we're excited to announce   personalized  retreats.  We offer a range of day and weekend retreats that are designed to cater to a diverse audience. Our retreats are centered around the concept of whole-body wellness, encompassing physical movement, enlightening workshops, nourishing cuisine, a nurturing and safe environment, and a profound sense of community.</p>
@@ -50,7 +50,7 @@ const About = () => {
         <div className="about-image-container">
           <img src={forestimage} alt="Twin Ports Northwoods"></img>
           <div className="about-photo-credit">
-            <p>Photo by <a href="https://unsplash.com/@betteratf8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">weston m</a> on <a href="https://unsplash.com/photos/g0bvYTcFN3o?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Unsplash</a></p>
+            <p>Photo by <a href="https://unsplash.com/@betteratf8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="noreferrer">weston m</a> on <a href="https://unsplash.com/photos/g0bvYTcFN3o?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="noreferrer">Unsplash</a></p>
           </div>
         </div>
       </div>
@@ -63,7 +63,7 @@ const About = () => {
         <div className="about-image-container">
           <img src={aleximage} alt="Duluth Minnesota North Shore"></img>
           <div className="about-photo-credit">
-            <p>Photo by <a href="https://www.theleavesofash.com/" target="_blank">Leaves Of Ash</a></p>
+            <p>Photo by <a href="https://www.theleavesofash.com/" target="_blank" rel="noreferrer">Leaves Of Ash</a></p>
           </div>
         </div>
         <p className="about-main-text">Our founder, Alex Ross, MA, is a Licensed Professional Clinical Counselor and Registered Yoga Teacher. Her passion forms the bedrock of Valkyrie Consulting, where we are dedicated to nurturing a strong mind-body connection for all.</p>

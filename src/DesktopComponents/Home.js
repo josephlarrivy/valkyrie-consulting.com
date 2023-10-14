@@ -29,7 +29,7 @@ const Home = () => {
           <p className="quote-text">Customized services designed to support the unique needs of individuals and groups through trauma informed yoga, other therapeutic approaches, and education</p>
         </div>
         <div className="home-photo-credit">
-          <p>Photo by <a href="https://unsplash.com/@brianbeckwith" target="_blank">Brian Beckwith</a> on <a href="https://unsplash.com/photos/hwcHGFlYlxE?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Unsplash</a></p>
+          <p>Photo by <a href="https://unsplash.com/@brianbeckwith" target="_blank" rel="noreferrer">Brian Beckwith</a> on <a href="https://unsplash.com/photos/hwcHGFlYlxE?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="noreferrer">Unsplash</a></p>
         </div>
       </div>
 
@@ -66,7 +66,7 @@ const Home = () => {
           <p className="quote-author">– Joe P.</p>
         </div>
         <div className="home-photo-credit">
-          <p>Photo by <a href="https://unsplash.com/@joshhild?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Josh Hild</a> on <a href="https://unsplash.com/photos/ANLERD5m1_s?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Unsplash</a></p>
+          <p>Photo by <a href="https://unsplash.com/@joshhild?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="noreferrer">Josh Hild</a> on <a href="https://unsplash.com/photos/ANLERD5m1_s?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="noreferrer">Unsplash</a></p>
         </div>
       </div>
 

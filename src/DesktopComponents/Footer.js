@@ -23,7 +23,7 @@ const Footer = () => {
       </div>
       <div className="footer-div">
         <b><p>Contact</p></b>
-        <a href={instagramUrl} target="_blank" rel="noopener noreferrer">
+        <a href={instagramUrl} target="_blank" rel="noreferrer">
           <img id="instagram-logo" src={instagramicon} alt="Instagram" />
         </a>
         <p>valkyrieconsults@gmail.com</p>
