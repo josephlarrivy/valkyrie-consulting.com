@@ -37,3 +37,46 @@
     /* margin-top: -10px; */
     height: 35px;
 }
+
+@media screen and (max-width: 768px) {
+    
+    #footer-inner-container #logo {
+            height: 60px;
+            /* Adjust logo size */
+            /* margin-right: 10px; */
+            /* Add margin to the right of the logo */
+            /* border-radius: 5px; */
+            /* Optional: Add border-radius to the logo */
+            margin-top: 20px;
+        }
+    
+        #footer-inner-container {
+            display: flex;
+            justify-content: space-around;
+            background-color: rgb(26, 153, 141);
+            color: white;
+        }
+    
+        .footer-div-links {
+            width: 32vw;
+        }
+    
+        .footer-div-links p {
+            font-family: serif;
+            color: white;
+        }
+    
+        .footer-div-links a {
+            text-decoration: none;
+        }
+    
+        .footer-div {
+            width: 32vw;
+            font-family: serif;
+        }
+    
+        #instagram-logo {
+            /* margin-top: -10px; */
+            height: 35px;
+        }
+}

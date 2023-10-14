@@ -158,7 +158,8 @@
 @media screen and (max-width: 768px) {
     #home-header #logo {
             margin-top: 40px;
-            width: 60%;
+            width: 80%;
+            margin-left: 5%;
         }
     
         #home-header #home-subtitle {
@@ -168,6 +169,7 @@
             padding: 10px;
             font-weight: 100;
             font-family: serif;
+            width: 100%;
         }
     
     
@@ -185,7 +187,8 @@
         }
     
         #services-home-container {
-            /* display: flex; */
+            display: flex;
+            flex-direction: column;
             width: 100vw;
         }
     
@@ -194,12 +197,12 @@
         }
     
         .services-block {
-            /* padding: 30px; */
+            padding: 0px;
             /* margin-bottom: 40px; */
             font-family: serif;
             width: 100vw;
-            background-color: pink;
-            margin-left: 10px;
+            /* background-color: pink; */
+            /* margin-left: 10px; */
         }
     
         .services-block h4 {
