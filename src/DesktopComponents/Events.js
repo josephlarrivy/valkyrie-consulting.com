@@ -11,7 +11,7 @@ const Events = () => {
         <div>
             <div id="events-header">
                 <i><h1>Events</h1></i>
-                <i><h2>We do not cerrently have any events scheduled.</h2></i>
+                <i><h2>We do not currently have any events scheduled.</h2></i>
             </div>
             <div id="events-page-content-container">
 

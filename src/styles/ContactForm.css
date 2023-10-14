@@ -5,6 +5,7 @@ form {
     display: flex;
     flex-direction: column;
     margin: 20px;
+    text-align: center;
 }
 
 label {
@@ -20,7 +21,7 @@ label {
 /* Input containers */
 .first-name-container,
 .last-name-container {
-    width: 40%;
+    width: 50%;
     margin-bottom: 20px;
     margin-left: 20px;
 }
@@ -28,25 +29,37 @@ label {
 .email-container {
     margin-bottom: 20px;
     margin-left: 20px;
-    width: calc(80% + 20px);
+    width: calc(100% - 20px);
 }
 
 .message-container {
     margin-bottom: 20px;
     margin-left: 20px;
-    width: calc(80% + 20px);
+    width: calc(100% - 20px);
     height: 90px;
 }
 
 
 /* Input fields */
 .name-input,
-.email-input,
+.email-input {
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 2px;
+    color: black;
+    height: 30px;
+    border-radius: 10px;
+    font-size: large;
+}
+
 .message-input {
     width: 100%;
     border: 1px solid black;
     border-radius: 2px;
     color: black;
+    height: 60px;
+    border-radius: 10px;
+    font-size: large;
 }
 
 /* Submit button */
