@@ -11,11 +11,12 @@ function App() {
     const handleResize = () => {
       setIsMobile(window.innerWidth < 768);
     };
+    console.log(isMobile)
     window.addEventListener('resize', handleResize);
     return () => {
       window.removeEventListener('resize', handleResize);
     };
-  }, []);
+  }, [isMobile]);
 
   return (
     <div className="App">
