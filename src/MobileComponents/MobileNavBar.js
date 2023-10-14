@@ -1,24 +1,24 @@
-import React, { useEffect, useState } from "react";
-import { Link, useLocation, useNavigate } from "react-router-dom";
-import useLocalStorage from "../hooks/useLocalStorage";
+// import React, { useEffect, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
+// import useLocalStorage from "../hooks/useLocalStorage";
 import valkyrielogo from "../images/Valkyrie-Consulting-Approved-Logo.png"
 import "../styles/MobileNavBar.css";
 
 const MobileNavBar = () => {
-  const [token, setTokenValue, removeToken, getToken, getDecodedToken] =
-    useLocalStorage("token");
+  // const [token, setTokenValue, removeToken, getToken, getDecodedToken] =
+  //   useLocalStorage("token");
   const location = useLocation();
-  const [loginStatus, setLoginStatus] = useState(null)
+  // const [loginStatus, setLoginStatus] = useState(null)
 
-  useEffect(() => {
-    const storedToken = getToken()
-    console.log(storedToken)
-    if (storedToken !== null) {
-      setLoginStatus(true)
-    } else {
-      setLoginStatus(false)
-    }
-  }, []);
+  // useEffect(() => {
+  //   const storedToken = getToken()
+  //   console.log(storedToken)
+  //   if (storedToken !== null) {
+  //     setLoginStatus(true)
+  //   } else {
+  //     setLoginStatus(false)
+  //   }
+  // }, []);
 
   return (
     <div id="mobile-nav-inner-container">
