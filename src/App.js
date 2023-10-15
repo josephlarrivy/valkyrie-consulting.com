@@ -1,16 +1,14 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
-import Home from "./DesktopComponents/Home";
-import About from "./DesktopComponents/About";
-import Services from "./DesktopComponents/Services";
-import Events from "./DesktopComponents/Events";
-import NavBar from "./DesktopComponents/NavBar";
-import Contact from "./DesktopComponents/Contact";
-import Footer from "./DesktopComponents/Footer";
+import Home from "./Components/Home";
+import About from "./Components/About";
+import Services from "./Components/Services";
+import Events from "./Components/Events";
+import NavBar from "./Components/NavBar";
+import Contact from "./Components/Contact";
+import Footer from "./Components/Footer";
 import "./styles/AppRoutes.css"
 import './App.css';
-// import DesktopAppRoutes from './DesktopComponents/DesktopAppRoutes';
-// import MobileAppRoutes from './MobileComponents/MobileAppRoutes';
 
 function App() {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
@@ -26,14 +24,6 @@ function App() {
     };
   }, [isMobile]);
 
-  // return (
-  //   <div className="App">
-  //     <BrowserRouter>
-  //       {/* {isMobile ? <MobileAppRoutes /> : <DesktopAppRoutes />} */}
-  //       <DesktopAppRoutes isMobile={isMobile}/>
-  //     </BrowserRouter>
-  //   </div>
-  // );
   return (
     <div className="App">
 
