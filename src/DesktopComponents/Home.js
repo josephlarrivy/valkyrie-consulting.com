@@ -8,7 +8,7 @@ import valkyrielogo from "../images/Valkyrie-Consulting-Approved-Logo.jpg"
 import '../styles/Home.css'
 
 
-const Home = () => {
+const Home = ({ isMobile }) => {
 
 
   return (
@@ -23,15 +23,18 @@ const Home = () => {
         </Link>
       </div>
 
-      <div className="image-container">
-        <img src={leavesimage} alt="duluth minnesota superior wisconsin shore" />
-        <div className="quote-container">
-          <p className="quote-text">Customized services designed to support the unique needs of individuals and groups through trauma informed yoga, other therapeutic approaches, and education</p>
+      {isMobile ? <></> :
+        <div className="image-container">
+          <img src={leavesimage} alt="duluth minnesota superior wisconsin shore" />
+          <div className="quote-container">
+            <p className="quote-text">Customized services designed to support the unique needs of individuals and groups through trauma informed yoga, other therapeutic approaches, and education</p>
+          </div>
+          <div className="home-photo-credit">
+            <p>Photo by <a href="https://unsplash.com/@brianbeckwith" target="_blank" rel="noreferrer">Brian Beckwith</a> on <a href="https://unsplash.com/photos/hwcHGFlYlxE?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="noreferrer">Unsplash</a></p>
+          </div>
         </div>
-        <div className="home-photo-credit">
-          <p>Photo by <a href="https://unsplash.com/@brianbeckwith" target="_blank" rel="noreferrer">Brian Beckwith</a> on <a href="https://unsplash.com/photos/hwcHGFlYlxE?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="noreferrer">Unsplash</a></p>
-        </div>
-      </div>
+      }
+      
 
       <i><h1 id="home-services-header">Services</h1></i>
       <div id="services-home-container">
@@ -58,17 +61,18 @@ const Home = () => {
       </Link>
 
       
-
-      <div className="image-container">
-        <img src={trailimage} alt="duluth minnesota superior wisconsin hiking trail" />
-        <div className="quote-container">
-          <p className="quote-text">“[Valkyrie Consulting is] conscious to my needs as a client, encouraging me to explore my trauma in a safe and controllable setting, where I can take the steps towards healing and recovery.”</p>
-          <p className="quote-author">– Joe P.</p>
+      {isMobile ? <></> :
+        <div className="image-container">
+          <img src={trailimage} alt="duluth minnesota superior wisconsin hiking trail" />
+          <div className="quote-container">
+            <p className="quote-text">“[Valkyrie Consulting is] conscious to my needs as a client, encouraging me to explore my trauma in a safe and controllable setting, where I can take the steps towards healing and recovery.”</p>
+            <p className="quote-author">– Joe P.</p>
+          </div>
+          <div className="home-photo-credit">
+            <p>Photo by <a href="https://unsplash.com/@joshhild?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="noreferrer">Josh Hild</a> on <a href="https://unsplash.com/photos/ANLERD5m1_s?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="noreferrer">Unsplash</a></p>
+          </div>
         </div>
-        <div className="home-photo-credit">
-          <p>Photo by <a href="https://unsplash.com/@joshhild?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="noreferrer">Josh Hild</a> on <a href="https://unsplash.com/photos/ANLERD5m1_s?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="noreferrer">Unsplash</a></p>
-        </div>
-      </div>
+      }
 
 
 

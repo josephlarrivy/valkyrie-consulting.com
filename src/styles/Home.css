@@ -166,10 +166,11 @@
             color: rgb(26, 153, 141);
             font-size: 20px;
             margin-top: 10px;
-            padding: 10px;
+            /* padding: 10px; */
             font-weight: 100;
             font-family: serif;
-            width: 100%;
+            width: 80%;
+
         }
     
     
@@ -214,7 +215,8 @@
         .services-block p {
             font-size: 22px;
             text-align: left;
-            width: 100%;
+            width: 90%;
+            margin-left: 5%;
         }
     
         #home-learn-more-button {
@@ -236,6 +238,7 @@
             height: 300px;
             /* Set the desired height */
             overflow: hidden;
+            display: none;
         }
     
         .image-container img {

@@ -19,7 +19,7 @@ const DesktopAppRoutes = ({ isMobile }) => {
       <div id="page-container">
         <Routes>
           <Route exact path="/"
-            element={<Home />}
+            element={<Home isMobile={isMobile}/>}
           />
           <Route exact path="/about"
             element={<About />}
