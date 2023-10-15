@@ -25,3 +25,37 @@
 #contact-right-side {
     width: 50vw;
 }
+
+@media screen and (max-width: 768px) {
+#contact-main-container .contact-page-header {
+        color: rgb(26, 153, 141);
+        font-size: 30px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        font-weight: 100;
+        font-family: serif;
+    }
+
+    #contact-content-container {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    #contact-left-side {
+        width: 90vw;
+        margin-left: 5vw;
+        font-family: serif;
+        margin-bottom: 80px;
+    }
+
+    #contact-left-side h1 {
+        color: rgb(26, 153, 141);
+        
+    }
+
+    #contact-right-side {
+        width: 100vw;
+        margin-left: -5vw;
+    }
+}
