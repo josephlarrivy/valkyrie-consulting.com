@@ -9,12 +9,12 @@ import Contact from "./Contact";
 import Footer from "./Footer";
 import "../styles/AppRoutes.css"
 
-const DesktopAppRoutes = () => {
+const DesktopAppRoutes = ({ isMobile }) => {
 
   return (
     <div id="page-main-container">
       <div id="nav-outer-container">
-        {<NavBar />}
+        {<NavBar isMobile={isMobile} />}
       </div>
       <div id="page-container">
         <Routes>

@@ -22,7 +22,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         {/* {isMobile ? <MobileAppRoutes /> : <DesktopAppRoutes />} */}
-        <DesktopAppRoutes />
+        <DesktopAppRoutes isMobile={isMobile}/>
       </BrowserRouter>
     </div>
   );

@@ -58,64 +58,75 @@
 @media screen and (max-width: 768px) {
     #nav-inner-container {
             display: flex;
+            align-items: center;
+            justify-content: space-around;
             width: 100vw;
+            padding: 5px 0px;
             /* align-items: center; */
             /* Center the items vertically */
             background-color: rgb(26, 153, 141);
+            box-shadow: none;
             /* padding: 2px 2px; */
             /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
             /* Optional: Add a box shadow */
         }
     
-        #nav-inner-container #logo {
-            /* height: 60px; */
-            /* Adjust logo size */
-            /* margin-right: 10px; */
-            /* Add margin to the right of the logo */
-            /* border-radius: 5px; */
-            /* Optional: Add border-radius to the logo */
-            display: none;
-        }
+    #nav-inner-container #logo {
+        /* height: 60px; */
+        /* Adjust logo size */
+        /* margin-right: 10px; */
+        /* Add margin to the right of the logo */
+        /* border-radius: 5px; */
+        /* Optional: Add border-radius to the logo */
+        width: 0px;
+        margin-left: 0px;
+        display: none;
+    }
 
-        #nav-inner-container #navbar-logo-complete {
-            display: none;
-        }
-    
-        /* Navigation links */
-        .nav-item {
-            text-decoration: none;
-            font-size: 10px;
-            /* Decrease font size */
-            color: white;
-            /* padding: 3px 3px; */
-            /* Reduce padding */
-            /* margin-left: 15px; */
-            /* Adjust margin */
-            /* transition: background-color 0.3s, color 0.3s; */
-            font-weight: 400;
-            font-family: serif;
-            /* border-radius: 5px; */
-            /* Add border-radius to links */
-        }
-    
-        /* Active link style */
-        .active {
-            background-color: rgb(26, 153, 141);
-            color: white;
-        }
-    
-        .active:hover {
-            /* background-color: white; */
-            /* color: rgb(26, 153, 141); */
-        }
-    
-        .contact-link {
-            margin-left: 10px;
-            /* padding: 8px 15px; */
-            /* Adjust padding */
-            /* margin-left: auto; */
-            /* Push it to the right */
-            /* border-radius: 5px; */
-            /* transition: background-color 0.3s, color 0.3s; */
-        }
+    #nav-inner-container #navbar-logo-complete {
+        display: none;
+    }
+
+    /* Navigation links */
+    .nav-item {
+        text-decoration: none;
+        font-size: 12px;
+        margin-left: 0px;
+        padding: 5px;
+        /* Decrease font size */
+        color: white;
+        /* padding: 3px 3px; */
+        /* Reduce padding */
+        /* margin-left: 15px; */
+        /* Adjust margin */
+        /* transition: background-color 0.3s, color 0.3s; */
+        font-weight: 300;
+        /* padding: 2px; */
+        font-family: serif;
+        /* border-radius: 5px; */
+        /* Add border-radius to links */
+    }
+
+    /* Active link style */
+    .active {
+        background-color: rgb(26, 153, 141);
+        color: white;
+        padding: 5px;
+    }
+
+    .active:hover {
+        /* background-color: white; */
+        /* color: rgb(26, 153, 141); */
+    }
+
+    .contact-link {
+        /* margin-left: 10px; */
+        /* padding: 8px 15px; */
+        /* Adjust padding */
+        /* margin-left: auto; */
+        /* Push it to the right */
+        /* border-radius: 5px; */
+        /* transition: background-color 0.3s, color 0.3s; */
+        display: none;
+    }
 }

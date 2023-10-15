@@ -4,7 +4,7 @@ import { Link, useLocation } from "react-router-dom";
 import valkyrielogo from "../images/Valkyrie-Consulting-Approved-Logo.png"
 import "../styles/NavBar.css";
 
-const NavBar = () => {
+const NavBar = ({ isMobile }) => {
   // const [token, setTokenValue, removeToken, getToken, getDecodedToken] =
   //   useLocalStorage("token");
   const location = useLocation();
@@ -57,14 +57,25 @@ const NavBar = () => {
             : "nav-item"
         }
       >Events</Link>
-      <Link
-        to="/contact"
-        className={
-          location.pathname === "/contact"
-            ? "nav-item active contact-link"
-            : "nav-item contact-link"
-        }
-      >Contact Us</Link>
+      {isMobile ? 
+        <Link
+          to="/contact"
+          className={
+            location.pathname === "/contact"
+              ? "nav-item active"
+              : "nav-item"
+          }
+        >Contact Us</Link>
+        : <Link
+          to="/contact"
+          className={
+            location.pathname === "/contact"
+              ? "nav-item active contact-link"
+              : "nav-item contact-link"
+          }
+        >Contact Us</Link>
+      }
+      
     </div>
   );
 };
