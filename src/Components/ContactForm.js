@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// import emailjs from 'emailjs-com';
+import emailjs from 'emailjs-com';
 import ReCAPTCHA from "react-google-recaptcha";
 import '../styles/ContactForm.css'
 
@@ -54,8 +54,8 @@ const ContactForm = () => {
       return;
     }
 
-    console.log(formData.services)
-    // emailjs.sendForm('service_yfh2nmo', 'template_flxfwwx', evt.target, 'dOwl-x9RcwhboytS1')
+    // console.log(formData.services)
+    emailjs.sendForm('service_yfh2nmo', 'template_flxfwwx', evt.target, 'dOwl-x9RcwhboytS1')
     setFormData({
       ...INITIAL_STATE,
       services: { ...formData.services } // Preserve services
