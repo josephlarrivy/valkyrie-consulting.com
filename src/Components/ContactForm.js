@@ -1,6 +1,6 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import emailjs from 'emailjs-com';
-
+import ReCAPTCHA from "react-google-recaptcha";
 import '../styles/ContactForm.css'
 
 const ContactForm = () => {
@@ -10,12 +10,19 @@ const ContactForm = () => {
     'lname': '',
     'email': '',
     'message': '',
-    'services': { // Initialize services as an empty object
-      'traumaInformedYoga': false, // You can set default values for services if needed
+    'services': {
+      'traumaInformedYoga': false,
+      'therapeuticConsultation': false,
+      'educationWorkshops': false,
+      'retreats': false,
+      'individual': false,
+      'group': false,
+      'organization': false,
     }
   }
 
   const [formData, setFormData] = useState(INITIAL_STATE);
+  const [captchaValue, setCaptchaValue] = useState(null);
 
   const handleChange = evt => {
     const { name, value, type, checked } = evt.target;
@@ -35,10 +42,25 @@ const ContactForm = () => {
     }
   };
 
+  const handleCaptchaChange = value => {
+    setCaptchaValue(value);
+  };
+
   const handleSubmit = async (evt) => {
     evt.preventDefault();
-    emailjs.sendForm('service_yfh2nmo', 'template_flxfwwx', evt.target, 'dOwl-x9RcwhboytS1')
-    setFormData(INITIAL_STATE);
+
+    if (!captchaValue) {
+      alert("Please complete the reCAPTCHA");
+      return;
+    }
+
+    console.log(formData.services)
+    // emailjs.sendForm('service_yfh2nmo', 'template_flxfwwx', evt.target, 'dOwl-x9RcwhboytS1')
+    setFormData({
+      ...INITIAL_STATE,
+      services: { ...formData.services } // Preserve services
+    });
+    setCaptchaValue(null); // Reset reCAPTCHA value
     alert("Form submitted successfully. Thank you for your request.");
   }
 
@@ -169,6 +191,13 @@ const ContactForm = () => {
           value={formData.message}
           onChange={handleChange}
           className="message-input"
+        />
+      </div>
+
+      <div className="recaptcha-container">
+        <ReCAPTCHA
+          sitekey="6Le-T7EoAAAAAFg2cM1AeyrrV_aHYGXOfg6yTX51"
+          onChange={handleCaptchaChange}
         />
       </div>
 
