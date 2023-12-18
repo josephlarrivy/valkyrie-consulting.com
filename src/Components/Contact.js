@@ -15,7 +15,7 @@ const Contact = () => {
 
         <div id="contact-left-side">
           <h1>Valkyrie Consulting</h1>
-          <p>Proudly Serving Serving Minnesota and Northern Wisconsin</p>
+          <p>Proudly Serving Minnesota and Northern Wisconsin</p>
           <p>valkyrieconsults@gmail.com</p>
         </div>
         <div id="contact-right-side">
