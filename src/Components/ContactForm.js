@@ -68,10 +68,10 @@ const ContactForm = () => {
   const handleSubmit = async (evt) => {
     evt.preventDefault();
 
-    // if (!captchaValue) {
-    //   alert("Please complete the reCAPTCHA");
-    //   return;
-    // }
+    if (!captchaValue) {
+      alert("Please complete the reCAPTCHA");
+      return;
+    }
 
     const url = 'https://private-email-sending-server-ed9119e08e0e.herokuapp.com/email/sendEmailValkyrie'
     // const url = 'http://localhost:3003/email/sendEmailValkyrie'
