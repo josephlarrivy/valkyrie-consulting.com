@@ -1,5 +1,7 @@
 import React, { useState } from "react";
-import emailjs from 'emailjs-com';
+// import emailjs from 'emailjs-com';
+
+import axios from 'axios';
 import ReCAPTCHA from "react-google-recaptcha";
 import '../styles/ContactForm.css'
 
@@ -46,23 +48,52 @@ const ContactForm = () => {
     setCaptchaValue(value);
   };
 
+  // const handleSubmit = async (evt) => {
+  //   evt.preventDefault();
+
+  //   if (!captchaValue) {
+  //     alert("Please complete the reCAPTCHA");
+  //     return;
+  //   }
+
+  //   emailjs.sendForm('service_yfh2nmo', 'template_flxfwwx', evt.target, 'dOwl-x9RcwhboytS1')
+  //   setFormData({
+  //     ...INITIAL_STATE,
+  //     services: { ...formData.services } // Preserve services
+  //   });
+  //   setCaptchaValue(null); // Reset reCAPTCHA value
+  //   alert("Form submitted successfully. Thank you for your request.");
+  // }
+
   const handleSubmit = async (evt) => {
     evt.preventDefault();
 
-    if (!captchaValue) {
-      alert("Please complete the reCAPTCHA");
-      return;
-    }
+    // if (!captchaValue) {
+    //   alert("Please complete the reCAPTCHA");
+    //   return;
+    // }
 
-    // console.log(formData.services)
-    emailjs.sendForm('service_yfh2nmo', 'template_flxfwwx', evt.target, 'dOwl-x9RcwhboytS1')
-    setFormData({
-      ...INITIAL_STATE,
-      services: { ...formData.services } // Preserve services
-    });
-    setCaptchaValue(null); // Reset reCAPTCHA value
-    alert("Form submitted successfully. Thank you for your request.");
-  }
+    const url = 'https://private-email-sending-server-ed9119e08e0e.herokuapp.com/email/sendEmailValkyrie'
+    // const url = 'http://localhost:3003/email/sendEmailValkyrie'
+
+    try {
+      const response = await axios.post(url, {
+        fname: formData.fname,
+        lname: formData.lname,
+        email: formData.email,
+        message: formData.message,
+        services: formData.services,
+      });
+
+      console.log('Success:', response.data);
+      setFormData(INITIAL_STATE);
+      alert("Form submitted successfully. Thank you for your request.");
+      setCaptchaValue(null);
+    } catch (error) {
+      console.error('Error:', error);
+      alert("There was an error submitting the form. Please try again.");
+    }
+  };
 
   return (
     <form onSubmit={handleSubmit}>
